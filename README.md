@@ -14,7 +14,7 @@ or
 
 build the image (java, lein, vertx, clojure deps will automagically be installed):
 
-```docker build -t clserver```
+```docker build -t clserve```
   
 run it (it will pull dependencies the first time)
 
