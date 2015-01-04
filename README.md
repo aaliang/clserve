@@ -14,7 +14,7 @@ or
 
 build the image (java, lein, vertx, clojure deps will automagically be installed):
 
-```docker build -t clserve```
+```docker build -t clserve .```
   
 run it (it will pull dependencies the first time)
 
@@ -26,7 +26,9 @@ recommend using this as a base image since the above command will wipe out the d
 
 run it again fresh:
 
-  ```docker run -i -t my-clserve lein vertx run```
+  ```docker run -i -t -p 8080:8080 my-clserve lein vertx run```
+
+by default it exposes port 8080
 
 ## License
 
