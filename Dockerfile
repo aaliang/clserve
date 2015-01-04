@@ -27,12 +27,11 @@ RUN lein
 
 RUN mkdir -p /usr/local/src
 
+# add source to container
 COPY . /usr/local/src/
 
 WORKDIR /usr/local/src
 
 RUN lein deps
-
-RUN vertx install io.vertx~lang-clojure~1.0.2
 
 CMD ["bash"]
