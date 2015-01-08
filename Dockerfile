@@ -34,4 +34,7 @@ WORKDIR /usr/local/src
 
 RUN lein deps
 
+EXPOSE 8080
+EXPOSE 80
+
 CMD ["bash"]
