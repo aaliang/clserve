@@ -15,7 +15,7 @@
 (defn start-http-server []
   (-> (http/server)
     (http/on-request req-handler)
-    (http/listen 8080 "localhost")))
+    (http/listen 8080 "0.0.0.0")))
 
 (defn stop-repl-server [] (repl/stop @repl-server-id))
 
